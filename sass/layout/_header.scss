@@ -31,7 +31,7 @@
 
   .mobile-menu-btn {
     z-index: 3;
-    position: fixed;
+    position: absolute;
     top: 32px;
     right: 20px;
     font-size: 32px;
@@ -65,7 +65,7 @@ i {
 
 nav {
   z-index: 1;
-  position: fixed;
+  /*  position: fixed; */
   width: 100%;
   background-color: white;
   color: #0d4882;
@@ -128,4 +128,32 @@ nav {
 
 .slide-out {
   animation: slide-out 1000ms ease;
+}
+
+/*into-content*/
+#intro-content {
+  margin: 5vw 6.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  h1 {
+    font-family: $primary-font;
+    color: $text-color;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  p {
+    font-family: $secondary-font;
+    color: $text-color;
+    font-size: 13px;
+  }
+
+  .intro-img {
+    width: auto;
+    margin-top: 2vw;
+    img {
+      width: 100%;
+    }
+  }
 }

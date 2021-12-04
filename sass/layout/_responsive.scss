@@ -1,5 +1,6 @@
 @use "../base" as *;
 @use "./header";
+@use "./main";
 
 @include media-md {
   .mobile-menu-btn {
@@ -33,5 +34,94 @@
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 13px;
+  }
+  .desktop-menu li a {
+    font-size: 12px;
+  }
+  .button_nav {
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+  nav .desktop-menu li {
+    margin-left: 34px;
+  }
+  .logo {
+    width: 11vw;
+  }
+  nav .nav-wrap {
+    margin: 0 3vw;
+  }
+
+  /*into-content*/
+  #intro-content {
+    flex-direction: row;
+
+    .intro-img {
+      width: 150vw;
+      margin-left: 3vw;
+      margin-top: 0;
+    }
+    .intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  /*service*/
+  #service .service-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+@include media-lg {
+  .desktop-menu li a {
+    font-size: 15px;
+  }
+  .button_nav {
+    font-size: 15px;
+    padding: 6px 8px;
+  }
+  .logo {
+    width: 9vw;
+  }
+
+  /*into-content*/
+  #intro-content {
+    margin-top: 0vw;
+
+    .intro-text {
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 1vw;
+      }
+    }
+    .intro-img {
+      width: 110vw;
+    }
+  }
+  /*service*/
+  #service {
+    .service-list {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+      }
+      .s-button {
+        margin-top: 1vw;
+        padding: 7px 14px;
+        font-size: 12px;
+        &:hover {
+          background-color: #0d4882;
+          color: white;
+          border: none;
+        }
+      }
+    }
   }
 }
