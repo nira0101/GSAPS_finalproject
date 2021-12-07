@@ -1,0 +1,86 @@
+@use "../base" as *;
+
+footer {
+  background-color: $text-color;
+  #footer-h {
+    margin: 0vw 6.5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    padding: 4vw;
+
+    .f-imgdesc {
+      .f-logo {
+        width: 15vw;
+        img {
+          width: 100%;
+        }
+      }
+      .f-desc {
+        h3 {
+          font-family: $secondary-font;
+          color: white;
+          font-size: 8px;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .f-contact {
+      .f-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .fa-ellipsis-h:before {
+          font-size: 25px;
+          color: white;
+        }
+        h1 {
+          font-family: $primary-font;
+          color: white;
+          font-size: 8px;
+          text-align: center;
+          margin-left: 1vw;
+        }
+      }
+      .f-cdesc {
+        h3 {
+          font-family: $secondary-font;
+          color: white;
+          font-size: 8px;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .f-offer {
+      .f-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .fa-ellipsis-h:before {
+          font-size: 25px;
+          color: white;
+        }
+        h1 {
+          font-family: $primary-font;
+          color: white;
+          font-size: 8px;
+          text-align: center;
+          margin-left: 1vw;
+        }
+      }
+      .f-odesc {
+        h3 {
+          font-family: $secondary-font;
+          color: white;
+          font-size: 8px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

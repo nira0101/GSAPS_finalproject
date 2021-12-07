@@ -8,10 +8,10 @@ main {
     display: flex;
     flex-direction: row;
     h1 {
-      font-size: 17px;
+      font-size: 13px;
       font-family: $primary-font;
       color: $text-color;
-      font-weight: bold;
+      font-weight: bolder;
       display: flex;
       align-items: center;
       margin-left: 2.5vw;
@@ -59,11 +59,138 @@ main {
       margin: 4px 0px;
       transition-duration: 0.4s;
       cursor: pointer;
-      /*   &:hover {
-        background-color: #0d4882;
-        color: white;
-        border: none;
-      } */
+    }
+  }
+}
+
+#choose-us {
+  margin-top: 4vw;
+  .choose-icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5vw;
+    h1 {
+      font-size: 13px;
+      font-family: $primary-font;
+      color: $text-color;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      margin-left: 2.5vw;
+    }
+    .fa-ellipsis-h:before {
+      font-size: 45px;
+    }
+  }
+  .choose-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3px 3.5px;
+
+    .ch {
+      border-radius: 50%;
+      background-color: $text-color;
+      height: 27vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h3 {
+      font-size: 12px;
+      font-family: $primary-font;
+      color: white;
+    }
+  }
+}
+
+#extra {
+  margin-top: 11vw;
+  display: flex;
+  flex-direction: column;
+  .question {
+    .q-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fa-phone-volume:before {
+        font-size: 55px;
+      }
+      .fa-ellipsis-h:before {
+        font-size: 40px;
+      }
+    }
+    .q-desc {
+      text-align: center;
+      h1 {
+        font-family: $primary-font;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      p {
+        margin-top: 1vw;
+        font-family: $secondary-font;
+        color: $text-color;
+        font-size: 12px;
+      }
+      .q-button {
+        background-color: white;
+        border: 2px solid #0d4882;
+        color: $text-color;
+        padding: 3px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 9px;
+        margin: 1.5vw 0px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .job {
+    margin-top: 11vw;
+    .j-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fa-search-plus:before {
+        font-size: 55px;
+      }
+      .fa-ellipsis-h:before {
+        font-size: 40px;
+      }
+    }
+    .j-desc {
+      text-align: center;
+      h1 {
+        font-family: $primary-font;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      p {
+        margin-top: 1vw;
+        font-family: $secondary-font;
+        color: $text-color;
+        font-size: 12px;
+      }
+      .j-button {
+        background-color: white;
+        border: 2px solid #0d4882;
+        color: $text-color;
+        padding: 3px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 9px;
+        margin: 1.5vw 0px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
     }
   }
 }

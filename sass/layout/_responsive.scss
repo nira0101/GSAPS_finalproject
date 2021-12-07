@@ -1,6 +1,7 @@
 @use "../base" as *;
 @use "./header";
 @use "./main";
+@use "./footer";
 
 @include media-md {
   .mobile-menu-btn {
@@ -72,6 +73,79 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
+
+  /*choose*/
+  #choose-us .choose-list {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2px 4px;
+    .ch {
+      height: 16vw;
+    }
+  }
+
+  /*extra*/
+  #extra {
+    flex-direction: row;
+    .question {
+      .q-icon {
+        .fa-phone-volume:before {
+          font-size: 90px;
+        }
+      }
+    }
+    .job {
+      margin-top: 0;
+      .j-icon {
+        .fa-search-plus:before {
+          font-size: 90px;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100%;
+    #footer-h {
+      align-items: center;
+
+      .f-imgdesc {
+        .f-logo {
+          width: 5vw;
+        }
+        .f-desc {
+          h3 {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .f-contact {
+        .f-icon {
+          h1 {
+            font-size: 14px;
+          }
+        }
+        .f-cdesc {
+          h3 {
+            font-size: 10px;
+          }
+        }
+      }
+      .f-offer {
+        .f-icon {
+          h1 {
+            font-size: 14px;
+          }
+        }
+        .f-odesc {
+          h3 {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include media-lg {
@@ -105,6 +179,11 @@
   }
   /*service*/
   #service {
+    .service-icon {
+      h1 {
+        margin-left: 1vw;
+      }
+    }
     .service-list {
       h2 {
         font-size: 18px;
@@ -120,6 +199,128 @@
           background-color: #0d4882;
           color: white;
           border: none;
+        }
+      }
+    }
+  }
+
+  /*choose*/
+  #choose-us {
+    .choose-icon {
+      h1 {
+        margin-left: 1vw;
+        text-transform: uppercase;
+      }
+    }
+    .choose-list {
+      .ch {
+        height: 13vw;
+        width: 82%;
+
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  /*extra*/
+  #extra {
+    justify-content: space-evenly;
+    margin-top: 5vw;
+    .question {
+      .q-icon {
+        .fa-phone-volume:before {
+          font-size: 130px;
+        }
+      }
+      .q-desc {
+        h1 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 13px;
+          text-align: start;
+        }
+        .q-button {
+          margin-top: 1vw;
+          padding: 7px 14px;
+          font-size: 12px;
+          &:hover {
+            background-color: #0d4882;
+            color: white;
+            border: none;
+          }
+        }
+      }
+    }
+    .job {
+      margin-top: 0;
+      .j-icon {
+        .fa-search-plus:before {
+          font-size: 130px;
+        }
+      }
+      .j-desc {
+        h1 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 13px;
+          text-align: start;
+        }
+        .j-button {
+          margin-top: 1vw;
+          padding: 7px 14px;
+          font-size: 12px;
+          &:hover {
+            background-color: #0d4882;
+            color: white;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100%;
+    #footer-h {
+      align-items: center;
+
+      .f-imgdesc {
+        .f-logo {
+          width: 8vw;
+        }
+        .f-desc {
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .f-contact {
+        .f-icon {
+          h1 {
+            font-size: 18px;
+          }
+        }
+        .f-cdesc {
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+      .f-offer {
+        .f-icon {
+          h1 {
+            font-size: 18px;
+          }
+        }
+        .f-odesc {
+          h3 {
+            font-size: 14px;
+          }
         }
       }
     }
