@@ -1,4 +1,8 @@
 import './sass/style.scss'
+
+"use strict"
+window.addEventListener("DOMContentLoaded", init);
+
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 
