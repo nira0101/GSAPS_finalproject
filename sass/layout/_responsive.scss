@@ -162,6 +162,20 @@
       }
     }
   }
+
+  /*contact.html*/
+  #contact-info {
+    flex-direction: row;
+    .c-form {
+      width: 158vw;
+    }
+    .c-desc {
+      margin-bottom: 0;
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @include media-lg {
@@ -375,6 +389,27 @@
           color: white;
           border: none;
         }
+      }
+    }
+  }
+
+  /*contact.html*/
+  #contact-info {
+    justify-content: center;
+    .c-form {
+      width: 34vw;
+      margin-left: 2vw;
+      label {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .c-desc {
+      width: 21vw;
+      h2 {
+        font-size: 19px;
       }
     }
   }

@@ -1,1 +1,84 @@
 @use "../base" as *;
+
+main {
+  margin: 5vw 6.5vw;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.error {
+  font-family: $secondary-font;
+  font-size: 10px;
+  color: red;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  .c-desc {
+    background-color: $text-color;
+    margin-bottom: 4vw;
+    h2 {
+      padding: 3vw;
+      font-family: $primary-font;
+      font-size: 12px;
+      color: white;
+    }
+  }
+}
+.c-form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  h1 {
+    font-size: 14px;
+    padding: 2vw;
+    text-align: center;
+    margin-top: 2vw;
+  }
+
+  #form-c {
+    padding: 30px 40px;
+
+    .form-group {
+      margin-bottom: 10px;
+      padding-bottom: 9px;
+      position: relative;
+      label {
+        font-family: $primary-font;
+        color: $text-color;
+        font-weight: bolder;
+        font-size: 13px;
+      }
+      input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        padding: 7px;
+        font-size: 13px;
+
+        &:focus {
+          outline: 0;
+          border-color: #777;
+        }
+      }
+    }
+  }
+}
+
+.c-btn {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
