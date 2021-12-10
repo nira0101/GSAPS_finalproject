@@ -15,25 +15,38 @@ main {
   color: red;
   font-weight: bold;
 }
-
-#contact-info {
+#job-desc {
   display: flex;
   flex-direction: column;
-  .c-desc {
-    background-color: $text-color;
-    margin-bottom: 4vw;
-    h2 {
-      padding: 3vw;
-      font-family: $primary-font;
+
+  .j-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .j-info {
+    p {
+      font-family: $secondary-font;
+      color: $text-color;
+      font-size: 14px;
+    }
+    h3 {
+      font-family: $secondary-font;
+      color: red;
       font-size: 12px;
-      color: white;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 2vw;
     }
   }
 }
-.c-form {
+
+#job-form {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 4vw;
   h1 {
     font-size: 14px;
     padding: 2vw;
@@ -41,7 +54,7 @@ main {
     margin-top: 2vw;
   }
 
-  #form-c {
+  #form-j {
     padding: 30px 40px;
 
     .form-group {
@@ -68,10 +81,15 @@ main {
         }
       }
     }
+    #interest {
+      border: 1px solid #0d4882;
+      margin-top: 1.5vw;
+      color: $text-color;
+    }
   }
 }
 
-.c-btn {
+.j-btn {
   cursor: pointer;
   background-color: #3498db;
   border: 2px solid #3498db;

@@ -11,7 +11,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <title>Contact</title>
+    <title>Job</title>
 </head>
 <body>
     <header>
@@ -20,9 +20,9 @@
             <ul class="mobile-menu slide-out display-none">
                 <li><a href="index.html">Home</a></li>
                 <li> <a href="service.html">Service</a></li>
-                <li><a href="job.html">Job</a></li>
+                <li><a href="#">Job</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="contact.html">contact</a></li>
        <li>       <button class="button_nav">Button</button></li>
             </ul>
           </div>
@@ -35,23 +35,28 @@
                 <ul class="desktop-menu">
                   <li><a href="index.html">Home</a></li>
                   <li> <a href="service.html">Service</a></li>
-                  <li><a href="job.html">Job</a></li>
+                  <li><a href="#">Job</a></li>
                   <li><a href="#">About us</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="contact.html">contact</a></li>
                   <li><button class="button_nav">+45 123456</button></li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-
     <main>
-        <h1 class="c-heading">CONTATCT</h1>
-        <div id="contact-info">
-            <div class="c-desc"><h2>Feel free to contatc us if you have any questions.You can fill up this form to get in touch with us</h2></div>
-            <div class="c-form">
-                <h1>CONTACT FORM</h1>
-                <form id="form-c">
+        <h1 class="j-heading">JOB</h1>
+        <div id="job-desc">
+            <div class="j-img"><img src="/public/team2.png" alt="" srcset="">  </div>
+            <div class="j-info"><h1>Do you want to join us?</h1>
+            <p>Be a part of our team and work with us.We provide good salary with flexible working times and good working enviroment.</p>
+        <p>If you are interested, please fill out the below form </p>
+    <h3>Important: It is required for the applicants to have a CPR no. and have permission to work in Denmark. </h3></div>
+        
+        </div>
+        <div id="job-form">
+                <h1>Job Application Form</h1>
+            <form id="form-j">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input id="name" type="text" name="name" required />
@@ -67,55 +72,30 @@
                         <input id="email" type="email" name="email" required />
                         <span id="error-2" class="error hidden">Email is required. Please, enter your name.</span>
                     </div>
+                  
                     <div class="form-group">
-                        <label for="desc">Description</label>
-                        <input id="desc" type="text" name="desc"  />
+                        <label for="age">Age</label>
+                        <input id="age" type="number" name="age" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="cpr">CPR number</label>
+                        <input id="cpr" type="number" name="cpr"  />
                         <!-- <span id="error-1" class="error hidden">Name is required. Please, enter your name.</span> -->
                     </div>
-                    <button id="submit" class="c-btn">Submit</button>
+                    <div class="form-group">
+                        <label for="interest">Interested feild of work</label>
+                        <select id="interest" name="interest">
+                          <option value="kitchen-helper">Kitchen helper</option>
+                          <option value="cleaner">Cleaner</option>
+                          <option value="dishwasher">dishwasher</option>
+                          <option value="Restaurant-helper">Restaurant helper</option>
+                        </select>
+                      </div>
+                    <button id="jsubmit" class="j-btn">Submit</button>
                 </form>
-            </div>
-            </div>
-
-       
+        </div>
     </main>
-    <footer>
-        <div id="footer-h">
-        <div class="f-imgdesc">
-          <div class="f-logo">
-  <img src="/public/GSAPS_NEWLOGOwhite.png" alt="" srcset="">
-          </div>
-          <div class="f-desc">
-            <h3>GS ApS is the company who will take care of your work. Professional Service and Fair Price.</h3>
-          </div>
-        </div>
-        <div class="f-contact">
-          <div class="f-icon">
-            <i class="fas fa-ellipsis-h"></i>
-            <h1>CONTATCT</h1>
-          </div>
-          <div class="f-cdesc">
-                <h3>+45 123456</h3>
-                <h3>123@gmail.com</h3>
-                <h3>Norrebro, Copenhagen</h3>
-                <h3>CVRno. -----</h3>
-          </div>
-        </div>
-        <div class="f-offer">
-          <div class="f-icon">
-            <i class="fas fa-ellipsis-h"></i>
-            <h1>Our services</h1>
-          </div>
-          <div class="f-odesc">
-            <h3>Dishwahers</h3>
-            <h3>Dishwahers</h3>
-            <h3>Dishwahers</h3>
-            <h3>Dishwahers</h3>
-          </div>
-        </div>
-      </div>
-      </footer>
 </body>
-<script type="module" src="/main.js"></script>
+<script type="module" src="/jobform.js"></script>
 <script type="module" src="/navi.js"></script>
 </html>
