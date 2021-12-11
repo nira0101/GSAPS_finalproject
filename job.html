@@ -56,7 +56,7 @@
         </div>
         <div id="job-form">
                 <h1>Job Application Form</h1>
-            <form id="form-j">
+            <form id="form-j" >
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input id="name" type="text" name="name" required />
@@ -93,6 +93,23 @@
                       </div>
                     <button id="jsubmit" class="j-btn">Submit</button>
                 </form>
+                <div class="form-submit hidden">
+                  <div class="f-s">
+
+                    <div class="f-icon">
+
+                      <input  type="button" class="close" value="✕" onclick="refreshPage()" />
+                    </div>
+                    <div class="f-info">
+
+                      <h2 class="f-d">Your application has been received.
+                        We will contact you in 1 or 2 business days.
+                        Thankyou.
+                      </h2>
+                    </div>
+                   
+                  </div>
+                </div>
         </div>
     </main>
 </body>

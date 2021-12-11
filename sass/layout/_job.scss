@@ -101,3 +101,43 @@ main {
   margin-top: 20px;
   width: 100%;
 }
+
+.form-submit {
+  position: absolute;
+  height: 89vw;
+  border-radius: 50%;
+  top: 175vw;
+  background-color: #0d4882;
+  margin: 5vw 6.5vw;
+  right: 0vw;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+
+  .f-info {
+    padding: 1vw;
+  }
+
+  .f-s {
+    padding: 5vw;
+
+    .f-d {
+      color: white;
+      font-family: $primary-font;
+      font-size: 12px;
+    }
+    .f-icon {
+      margin-bottom: 4vw;
+      display: flex;
+      justify-content: flex-end;
+      .close {
+        border: none;
+        width: 8vw;
+      }
+    }
+  }
+}
+
+.blur {
+  filter: blur(2px);
+}

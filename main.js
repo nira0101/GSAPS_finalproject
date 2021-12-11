@@ -5,10 +5,12 @@ window.addEventListener("DOMContentLoaded", init);
 
 
 const formOne = document.querySelector("#form-c");
+;
 
 
 function init(){
   post();
+
 /*   validateForm(); */
  
   }
@@ -26,6 +28,8 @@ function init(){
       .then((data) => console.log(data));
   }
 
+  
+
 
   //validate form//
   function validateForm(){
@@ -42,19 +46,23 @@ function init(){
      else{
       document.querySelector("#error-1").classList.add("hidden");
       document.querySelector("#error-2").classList.add("hidden");
+     
     }
   }
 
   
 
-    document.getElementById("submit").addEventListener("click", (e) => {
+    document.getElementById("c-submit").addEventListener("click", (e) => {
 e.preventDefault();
 
 validateForm();
 contactDataPost();
 
 
+
     })
+
+
 
     function contactDataPost(){
       post({
@@ -63,8 +71,19 @@ contactDataPost();
        number: formOne.elements.number.value,
        desc:formOne.elements.desc.value
       });
+
+     
     }
 
+    
+
+
+    
+  
+  
+  
+  
+  
     
 
 //mobile nav//
@@ -76,4 +95,6 @@ contactDataPost();
  
 
   formOne.setAttribute("novalidate", true);
+ 
+  
 
