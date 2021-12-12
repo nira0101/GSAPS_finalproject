@@ -188,6 +188,19 @@
       margin-left: 3vw;
     }
   }
+  .form-submit {
+    height: 38vw;
+    width: 38vw;
+    top: 75vw;
+    right: 25vw;
+    .f-s {
+      .f-icon {
+        .close {
+          width: 3vw;
+        }
+      }
+    }
+  }
 }
 
 @include media-lg {
@@ -442,5 +455,19 @@
         font-size: 14px;
       }
     }
+  }
+
+  /*job*/
+  #job-form {
+    width: 37vw;
+
+    position: absolute;
+    right: 30vw;
+  }
+  .form-submit {
+    height: 30vw;
+    width: 30vw;
+    top: -1vw;
+    right: -3vw;
   }
 }
