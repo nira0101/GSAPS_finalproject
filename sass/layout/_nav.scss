@@ -9,7 +9,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     transition: 1000ms ease all;
   }
@@ -26,6 +26,8 @@
       font-family: $primary-font;
       font-size: 16px;
       font-weight: bold;
+      color: white;
+      text-transform: uppercase;
     }
   }
 

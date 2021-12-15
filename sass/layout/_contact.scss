@@ -1,5 +1,10 @@
 @use "../base" as *;
 
+.active {
+  color: white;
+  background-color: $text-color;
+  padding: 1vw;
+}
 main {
   margin: 5vw 6.5vw;
 }

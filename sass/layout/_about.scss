@@ -1,0 +1,33 @@
+@use "../base" as *;
+
+main {
+  margin: 5vw 6.5vw;
+}
+
+.a-headong {
+  font-family: $primary-font;
+  color: $text-color;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#a-content {
+  display: flex;
+  flex-direction: column;
+
+  .a-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .a-desc {
+    margin-top: 3vw;
+    h3 {
+      font-family: $secondary-font;
+      color: $text-color;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}

@@ -6,6 +6,7 @@
 @use "./service";
 @use "./contact";
 @use "./job";
+@use "./about";
 @include media-md {
   .mobile-menu-btn {
     display: none;
@@ -252,10 +253,17 @@
         margin-top: 1vw;
         padding: 7px 14px;
         font-size: 12px;
+
+        .s-a {
+          color: $text-color;
+        }
         &:hover {
           background-color: #0d4882;
           color: white;
           border: none;
+          .s-a {
+            color: white;
+          }
         }
       }
     }
@@ -309,6 +317,9 @@
             background-color: #0d4882;
             color: white;
             border: none;
+            .e-a {
+              color: white;
+            }
           }
         }
       }
@@ -336,6 +347,9 @@
             background-color: #0d4882;
             color: white;
             border: none;
+            .e-a {
+              color: white;
+            }
           }
         }
       }
@@ -413,6 +427,9 @@
           background-color: #0d4882;
           color: white;
           border: none;
+          .s-a {
+            color: white;
+          }
         }
       }
     }
@@ -469,5 +486,19 @@
     width: 30vw;
     top: -1vw;
     right: -3vw;
+  }
+
+  /*about*/
+  .a-heading {
+    font-size: 25px;
+  }
+  #a-content {
+    flex-direction: row;
+    .a-img {
+      width: 160vw;
+    }
+    .a-desc {
+      margin-left: 4vw;
+    }
   }
 }

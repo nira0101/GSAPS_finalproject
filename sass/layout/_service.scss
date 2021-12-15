@@ -1,5 +1,15 @@
 @use "../base" as *;
 
+.active {
+  color: white;
+  background-color: $text-color;
+  padding: 1vw;
+}
+.s-a {
+  text-decoration: none;
+  color: $text-color;
+}
+
 main {
   margin: 5vw 6.5vw;
   h1 {

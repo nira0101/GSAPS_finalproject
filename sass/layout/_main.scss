@@ -2,6 +2,15 @@
 main {
   margin: 5vw 6.5vw;
 }
+.active {
+  color: white;
+  background-color: $text-color;
+  padding: 1vw;
+}
+.e-a {
+  text-decoration: none;
+  color: $text-color;
+}
 
 #service {
   .service-icon {
@@ -59,6 +68,10 @@ main {
       margin: 4px 0px;
       transition-duration: 0.4s;
       cursor: pointer;
+
+      .s-a {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -101,6 +114,7 @@ main {
       font-size: 12px;
       font-family: $primary-font;
       color: white;
+      text-transform: uppercase;
     }
   }
 }

@@ -137,6 +137,11 @@ main {
     }
   }
 }
+.active {
+  color: white;
+  background-color: $text-color;
+  padding: 1vw;
+}
 
 .blur {
   filter: blur(2px);
