@@ -9,6 +9,7 @@ module.exports = {
         service:resolve(__dirname, 'service.html'),
         contact:resolve(__dirname, 'contact.html'),
         job:resolve(__dirname, 'job.html'),
+        about:resolve(__dirname, 'about.html'),
        
       }
     }
