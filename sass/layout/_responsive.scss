@@ -177,6 +177,12 @@
       }
     }
   }
+  .form-submit-c {
+    height: 30vw;
+    width: 30vw;
+    top: 48vw;
+    right: 12vw;
+  }
 
   /*job.html*/
   #job-desc {
@@ -453,6 +459,14 @@
       h2 {
         font-size: 19px;
       }
+    }
+  }
+
+  .form-submit-c {
+    top: 22vw;
+    right: 17vw;
+    .close {
+      width: 3vw;
     }
   }
 

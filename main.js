@@ -71,9 +71,26 @@ contactDataPost();
        number: formOne.elements.number.value,
        desc:formOne.elements.desc.value
       });
-
+      document.querySelector(".form-submit-c").classList.remove("hidden");
+      document.querySelector("#form-c").classList.add("blur");
+            document.querySelector(".close").addEventListener("click", ()=>{
+              close();
+              refreshPage();
+            })
      
     }
+
+    
+    function close(){
+      document.querySelector(".form-submit-c").classList.add("hidden");
+      document.querySelector("#form-c").classList.remove("blur");
+    }
+
+    function refreshPage() {
+      // window.location.href = window.location.href;
+      location.reload();
+    }
+
 
     
 
