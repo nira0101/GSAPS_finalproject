@@ -59,7 +59,7 @@ function init(){
               email: formTwo.elements.email.value,
               age:  formTwo.elements.age.value,
              number: formTwo.elements.number.value,
-             cpr: formTwo.elements.cpr.value,
+             desc: formTwo.elements.desc.value,
             interest: formTwo.elements.interest.value, 
             });
 

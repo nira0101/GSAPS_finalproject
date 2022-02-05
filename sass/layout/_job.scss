@@ -80,6 +80,14 @@ main {
           border-color: #777;
         }
       }
+      ::placeholder {
+        font-style: italic;
+        font-size: 11px;
+      }
+      #desc {
+        height: 21vw;
+        border: 2px solid #f0f0f0;
+      }
     }
     #interest {
       border: 1px solid #0d4882;

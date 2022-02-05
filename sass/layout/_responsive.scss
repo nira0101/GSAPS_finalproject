@@ -494,7 +494,18 @@
 
     position: absolute;
     right: 30vw;
+    ::placeholder {
+      font-style: italic;
+      font-size: 12px;
+    }
   }
+  #job-form #form-j .form-group #desc {
+    height: 5vw;
+  }
+  #job-desc .j-img {
+    width: 36vw;
+  }
+
   .form-submit {
     height: 30vw;
     width: 30vw;
